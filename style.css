@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+body {
+    padding:0px;
+    margin:0px;
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-family: 'Redressed', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #dfaf47;
+}
+ul.tab-header li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    background: #d2d2d2;
+    cursor: pointer;
+    margin: 1px;
+}
+ul.tab-header li.active {
+    background: #9978ff;
+    color:#fff;
+}
+
+ul.tab-header li:hover {
+    background: #9978ff;
+    color:#fff;
+}
+
+
+.tab-content .active {
+    display: flex !Important;
+    opacity: 1 !important;
+    transition: opacity .15s linear;
+}
+.tab-content .tab-inner {
+    display: none;
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+ul.tab-header {
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+.wrapper {
+    width: 600px;
+    margin: 0px auto;
+}
+.tab-content {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: 0px;
+}
+.tab-content .tab-inner p {
+    padding: 10px;
+}
